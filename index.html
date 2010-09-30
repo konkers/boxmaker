@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Box Maker</title>
+  </head>
+  <body>
+    <form action="boxmaker.py" method="post">
+      <table>
+	<tr><td>Height:</td><td><input name="height" value="2.5" /></td></tr>
+	<tr><td>Width:</td><td><input name="width" value="3.5" /></td></tr>
+	<tr><td>Depth:</td><td><input name="depth" value="6" /></td></tr>
+	<tr><td>Spacing:</td><td><input name="spacing" value="0.5" /></td></tr>
+	<tr><td>Material Thickness:</td><td><input name="thickness" value="0.2" /></td></tr>
+	<tr><td>Format:</td><td><select name="format">
+	      <option value="pdf">PDF (one side per page)</option>
+	      <option value="single_pdf">PDF (all sides on one page)</option>
+	      <option value="dxf">DXF (one dxf per side in a zip file)</option>
+	      <option value="single_dxf">DXF (all sides in the same file)</option>
+	</select></td></tr>
+      </table>
+      <input type="submit" value="Box!" />
+    </form>
+  </body>
+</html>
