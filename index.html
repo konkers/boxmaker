@@ -1,24 +1,100 @@
 <html>
   <head>
     <title>Box Maker</title>
+    <link href="boxmaker.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <form action="boxmaker.py" method="post">
       <table>
-	<tr><td>Height:</td><td><input name="height" value="2.5" /></td></tr>
-	<tr><td>Width:</td><td><input name="width" value="3.5" /></td></tr>
-	<tr><td>Depth:</td><td><input name="depth" value="6" /></td></tr>
-	<tr><td>Spacing:</td><td><input name="spacing" value="0.5" /></td></tr>
-	<tr><td>Material Thickness:</td><td><input name="thickness" value="0.2" /></td></tr>
-	<tr><td>Format:</td><td><select name="format">
-	      <option value="pdf">PDF (one side per page)</option>
-	      <option value="single_pdf">PDF (all sides on one page)</option>
-	      <option value="dxf">DXF (one dxf per side in a zip file)</option>
-	      <option value="single_dxf">DXF (all sides in the same file)</option>
-	</select></td></tr>
+
+	<tr>
+	  <td width="16px" height="16"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="16px"></td>
+	</tr>
+
+	<tr>
+	  <td height="100px"></td>
+	  <td rowspan="7" colspan="10" class="center">
+	    <table class="invis">
+	      <tr><td colspan="3" class="invis" height="20px" width="1020px"></td></tr>
+	      <tr><td class="invis" height="250px" width="20px"></td>
+		<td class="invis" width="500px" valign="top">
+		  <table>
+		    <tr><td class="dim">A</td><!--<td>Height:</td>--><td><input name="height" value="2.5" size="5"/></td></tr>
+		    <tr><td class="dim">B</td><!--<td>Width:</td>--><td><input name="width" value="3.5"  size="5"/></td></tr>
+		    <tr><td class="dim">C</td><!--<td>Depth:</td>--><td><input name="depth" value="6"  size="5"/></td></tr>
+		    <tr><td class="dim">D</td><!--<td>Spacing:</td>--><td><input name="spacing" value="0.5"  size="5"/></td></tr>
+		    <tr><td class="dim">E</td><!--<td>Material Thickness:</td>--><td><input name="thickness" value="0.2"  size="5"/></td></tr>
+		  </table>
+		<td class="invis" valign="top" align="right">
+		  <table>
+		    <tr><td class="dim">FORMAT</td><td>
+			<select name="format">
+			  <option value="pdf">PDF (one side per page)</option>
+			  <option value="single_pdf">PDF (all sides on one page)</option>
+			  <option value="dxf">DXF (one dxf per side in a zip file)</option>
+			  <option value="single_dxf">DXF (all sides in the same file)</option>
+			</select>
+		    </td></tr>
+		  </table>
+		</td>
+
+	      </td></tr>
+	      <tr><td colspan="3" class="invis" height="330px" valign="top" align="center">
+		  <input type="submit" value="make" /> 
+	      </td></tr>
+	      <tr>
+		<td colspan="2" class="invis" height="100px"></td>
+		<td class="invis" valign="bottom" align="right">
+		  <table>
+		    <tr>
+		      <td class="dim">Engineer</td>
+		      <td class="dim">Erik Gilling &lt;<a href="mailto:konkers@konkers.net">konkers@konkers.net</a>&gt;</td>
+		    </tr>
+		    <tr>
+		      <td class="dim">Source</td>
+		      <td class="dim"><a href="http://github.com/konkers/boxmaker">git://github.com/konkers/boxmaker.git</a>
+</td>
+		    </tr>
+		  </table>
+	      </td></tr>
+	      <tr><td colspan="3" class="invis" height="20px" width="1020px"></td></tr>
+	    </table>
+	  </td>
+    	  <td height="100px"></td>
+	  
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr><td height="100px"></td><td height="100px"></td></tr>
+	<tr>
+	  <td width="16px" height="16"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="100px"></td>
+	  <td width="16px"></td>
+	</tr>
+
       </table>
-      <input type="submit" value="Box!" />
     </form>
-    <a href="http://github.com/konkers/boxmaker">Source on github</a>
   </body>
 </html>

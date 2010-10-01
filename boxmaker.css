@@ -1,0 +1,43 @@
+body
+{
+    font-family: Verdana, sans-serif;
+}
+
+table
+{
+    border-collapse:collapse;
+}
+
+table,th, td
+{
+    border: 2px solid black;
+}
+
+td.center
+{
+    background-image:url('box.png');
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+table.invis, td.invis
+{
+    border: 0px solid black;
+}
+
+td.dim
+{
+    padding: 7px;
+}
+
+a 
+{
+    color: black;
+}
+
+input
+{
+    height: 25px;
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+}
